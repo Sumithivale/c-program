@@ -1,0 +1,40 @@
+/* write a program to check if a student passes or failed */
+#include<stdio.h>
+int main(){
+	int marks;
+	char job;
+	printf("Enter students marks: \n");
+	scanf("%d",&marks);
+	if(marks<=34){
+		printf("the student is fail");
+	}
+	else if(marks<=100){
+	 printf("the student is pass \n");	
+	     if(marks>=80){
+	 	printf("you choose stream Science \n");
+	 	printf("please choose a char(s,e,d) \n");
+	 	scanf("%s",&job);
+	 	switch(job){
+	 		case 's':printf("Congrats you choose Scientist");
+	 		break;
+	 		case 'e':printf("Congrats you choose Engeener");
+	 		break;
+	 		case 'd':printf("Congrats you choose Doctor");
+	 		break;
+	 		default:printf("please enter char (s,e,d)");
+		 }
+	 	    
+	     }
+	     else if(marks>=60){
+	 	printf("you choose stream Commerce");
+	    }
+	    else{
+	 	printf("you will choose Arts or ITI");
+	    }
+	    }
+	else{
+		printf("please enter valid marks (1-100)");
+	}
+	
+	return 0;
+}
